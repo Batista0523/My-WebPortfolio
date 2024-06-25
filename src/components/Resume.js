@@ -3,55 +3,75 @@ import { useState } from "react";
 const educationData = [
   {
     id: 1,
-    title: "Backend Programming",
-    academy: "CoderHouse Course",
-    dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    startYear: "2014",
-    endYear: "2016",
+    title: "Computer Science",
+    academy: "LaGuardia Community College",
+    dec: " Calculus I, Computer Programming I, General Chemistry I, Mathematical Structures for Computer Science, Computer Programming II, Data Structures and Algorithms, Research Methods in Computers and Society",
+    startYear: "2012",
+    endYear: "2013",
+  },
+  {
+    id: 4,
+    title: "The Web Developer Bootcamp 2024",
+    academy: "Udemy",
+    dec: "Completed the comprehensive Web Developer Bootcamp 2024 course on Udemy, covering modern web development technologies and practices. Mastered front-end development with HTML5, CSS3, and JavaScript, including frameworks like React.js. Acquired proficiency in server-side scripting using Node.js and Express.js, and database management with MongoDB. Hands-on experience in building responsive web applications, implementing RESTful APIs, and deploying projects using cloud services. Developed a strong foundation in full-stack web development, emphasizing code quality, performance optimization, and responsive design principles.",
+    startYear: "2022",
+    endYear: "2023",
+    
   },
   {
     id: 2,
-    title: "Faculty of Design",
-    academy: "Lviv National Academy of Arts",
-    dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    startYear: "2012",
-    endYear: "2014",
+    title: "Full Stack Developer",
+    academy: "Pursuit Fellowship",
+    dec: "Frontend Development: JavaScript, React, Next.js, HTML, CSS, Vite, Backend Development: Node.js, Express, RESTful APIs, Database Management: PostgreSQL, Version Control: Git, GitHub, Testing & Debugging: Unit Testing, Integration Testing, Collaboration Tools: Slack, Trello",
+    startYear: "2022",
+    endYear: "2024",
   },
   {
     id: 3,
+    title: "Node,SQL & PostrgreSQL - mastering Backend Web Development",
+    academy: "Udemy",
+    dec: "Completed Mastering Backend Web Development certification on Udemy, specializing in Node.js, SQL, and PostgreSQL. Proficient in building robust backend systems with Node.js, and skilled in SQL and PostgreSQL for database management. Experienced in deploying scalable web applications and implementing RESTful APIs for enhanced functionality.",
+    startYear: "2022",
+    endYear: "2023",
+    
+  },
+  {
+    id: 5,
     title: "High School",
-    academy: "IT Future",
-    dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    startYear: "2010",
-    endYear: "2012",
+    academy: "FDR Hight School",
+    dec: "Completed courses in Mathematics, Sciences, Humanities, and Electives. Developed skills in time management, collaboration, and problem-solving.",
+    startYear: "2007",
+    endYear: "2011",
   },
 ];
 
 const experienceData = [
   {
     id: 1,
-    title: "UI Head & Manager",
-    company: "Soft Tech Inc.",
-    dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    startYear: "2020",
+    title: "Professional Chauffeur",
+    company: "Crestwood Limousine",
+    dec: "Experienced professional chauffeur known for delivering exceptional customer service in the transportation industry. Dedicated to providing a safe, comfortable, and punctual driving experience for clients. Skilled in navigating diverse routes with precision while maintaining a focus on passenger comfort and satisfaction. Proven track record of building strong client relationships through attentive service and professionalism. Possesses a thorough knowledge of local traffic regulations and routes to ensure efficient travel. Committed to upholding the highest standards of service excellence in every journey",
+    startYear: "2016",
     endYear: false,
   },
   {
     id: 2,
-    title: "UI / UX Specialist",
-    company: "Kana Design Studio",
-    dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    startYear: "2018",
+    title: "Project Manager",
+    company: "Winter Wolf Tech",
+    dec: "Served as a Project Manager at Winter Wolf Tech, overseeing the successful planning, execution, and delivery of multiple projects within scope, budget, and timeline constraints. Led cross-functional teams in Agile methodologies, facilitating sprint planning, daily stand-ups, and retrospectives to ensure efficient project progress. Managed stakeholder communications and expectations, providing regular updates and addressing project risks and issues proactively. Utilized project management tools to track milestones, deliverables, and resource allocation effectively. Demonstrated strong leadership and organizational skills to drive project completion and client satisfaction.",
+    startYear: "2019",
     endYear: "2020",
+  
   },
   {
     id: 3,
-    title: "Plugins Developer",
-    company: "Fiverr.com",
-    dec: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    startYear: "2016",
-    endYear: "2018",
-  },
+    title: "Software Developer",
+    company: "UpWork",
+    dec: "Led the development and deployment of custom plugins, enhancing functionality and user experience on the Fiverr platform. Collaborated closely with cross-functional teams to design and implement scalable solutions, leveraging technologies such as JavaScript, Node.js, and PostgreSQL. Contributed to improving platform performance and reliability, ensuring seamless integration of new features. Managed project timelines and deliverables, consistently meeting or exceeding client expectations.",
+    startYear: "2014",
+    endYear: "2016",
+  }
+  
 ];
 
 const Resume = () => {

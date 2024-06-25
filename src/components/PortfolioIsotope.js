@@ -1,7 +1,25 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
+import { getAllItems } from "../HELPERS/ApiCalls";
 import { Fragment, useEffect, useRef, useState } from "react";
 const PortfolioIsotope = ({ noViewMore }) => {
+
+
+
+  const [items, setItems] = useState([]);
+  const endpoint = "project";
+
+  useEffect(() => {
+    const fetchItem = async () => {
+      try {
+        const response = await getAllItems(endpoint);
+        setItems(response.data.payload);
+      } catch (error) {
+        console.error("Error fetching items", error);
+      }
+    };
+    fetchItem();
+  }, []); 
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
@@ -35,52 +53,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
   return (
     <Fragment>
       <div className="works-box">
-        <div
-          className="filter-links scrolla-element-anim-1 scroll-animate"
-          data-animate="active"
-        >
-          <a
-            className={`c-pointer lui-subtitle ${activeBtn("*")}`}
-            onClick={handleFilterKeyChange("*")}
-            data-href=".works-col"
-          >
-            All
-          </a>
-          <a
-            className={`c-pointer lui-subtitle ${activeBtn(
-              "sorting-ui-ux-design"
-            )}`}
-            onClick={handleFilterKeyChange("sorting-ui-ux-design")}
-            data-href=".sorting-ui-ux-design"
-          >
-            UI UX Design
-          </a>
-          <a
-            className={`c-pointer lui-subtitle ${activeBtn("sorting-photo")}`}
-            onClick={handleFilterKeyChange("sorting-photo")}
-            data-href=".sorting-photo"
-          >
-            Photography
-          </a>
-          <a
-            className={`c-pointer lui-subtitle ${activeBtn(
-              "sorting-development"
-            )}`}
-            onClick={handleFilterKeyChange("sorting-development")}
-            data-href=".sorting-development"
-          >
-            Development
-          </a>
-          <a
-            className={`c-pointer lui-subtitle ${activeBtn(
-              "sorting-branding"
-            )}`}
-            onClick={handleFilterKeyChange("sorting-branding")}
-            data-href=".sorting-branding"
-          >
-            Branding
-          </a>
-        </div>
+      
         <div className="works-items works-masonry-items row">
           <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
             <div

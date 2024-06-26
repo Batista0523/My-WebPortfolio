@@ -115,12 +115,19 @@ const Index = () => {
                 data-animate="active"
               >
                 <img
+               
                   decoding="async"
                   src="assets/images/IMG_0896.PNG"
                   alt="<b>Zoé</b> Miller"
                 />
                 <span className="circle circle-1" />
                 <span
+                  className="circle img-1"
+                  style={{
+                    backgroundImage: "url(assets/images/pat-1.png)",
+                  }}
+                />
+              <span
                   className="circle img-1"
                   style={{
                     backgroundImage: "url(assets/images/pat-1.png)",

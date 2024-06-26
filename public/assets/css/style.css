@@ -2470,14 +2470,15 @@ hr {
 	position: absolute;
 	left: 0;
 	bottom: 0;
+	width: 80%;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
 }
 
 .section.hero-started .slide .circle.circle-1 {
-	width: 680px;
-	height: 680px;
+	width: 698px;
+	height: 800px;
 	z-index: 2;
 	background: #29a587;
 	border-radius: 100%;
@@ -2485,9 +2486,9 @@ hr {
 }
 
 .section.hero-started .slide .circle.img-1 {
-	top: 75px;
-	right: 40px;
-	left: auto;
+	top: -5px;
+	/* right: 90px; */
+	left: 60px;
 	width: 226px;
 	height: 226px;
 }

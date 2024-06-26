@@ -604,7 +604,7 @@ const Index = () => {
                 data-splitting="words"
                 data-animate="active"
               >
-                <span> Portfolio </span>
+                <span>Showcase of Premier Projects</span>
               </h2>
               <div
                 className="m-subtitle splitting-text-anim-1 scroll-animate"
@@ -622,7 +622,7 @@ const Index = () => {
         {/* Works */}
         <div className="v-line v-line-right">
           <div className="container">
-            {/* <PortfolioIsotope /> */}
+            <PortfolioIsotope />
             <div className="lui-bgtitle">
               <span> Portfolio </span>
             </div>

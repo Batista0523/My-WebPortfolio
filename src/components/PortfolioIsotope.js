@@ -3,9 +3,6 @@ import Link from "next/link";
 import { getAllItems } from "../HELPERS/ApiCalls";
 import { Fragment, useEffect, useRef, useState } from "react";
 const PortfolioIsotope = ({ noViewMore }) => {
-
-
-
   const [items, setItems] = useState([]);
   const endpoint = "project";
 
@@ -19,7 +16,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
       }
     };
     fetchItem();
-  }, []); 
+  }, []);
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
@@ -46,14 +43,11 @@ const PortfolioIsotope = ({ noViewMore }) => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
-  const handleFilterKeyChange = (key) => () => {
-    setFilterKey(key);
-  };
-  const activeBtn = (value) => (value === filterKey ? "active" : "");
+
+  
   return (
     <Fragment>
       <div className="works-box">
-      
         <div className="works-items works-masonry-items row">
           <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
             <div
@@ -62,35 +56,54 @@ const PortfolioIsotope = ({ noViewMore }) => {
             >
               <div className="image">
                 <div className="img">
-                  <Link legacyBehavior href="/work-single">
-                    <a>
-                      <img
-                        decoding="async"
-                        src="assets/images/work4.jpeg"
-                        alt="Zorro"
-                      />
-                      <span className="overlay" />
-                    </a>
-                  </Link>
+                  <a
+                    href="https://courtiq.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      decoding="async"
+                      src="assets/images/courtiq.png"
+                      alt="Zorro"
+                    />
+                    <span className="overlay" />
+                  </a>
                 </div>
               </div>
               <div className="desc">
-                <span className="category"> Branding, Photography </span>
+                <span className="category"> Full Stack </span>
                 <h5 className="name">
                   <Link legacyBehavior href="/work-single">
-                    <a>Zorro</a>
+                    <a>CourtIQ</a>
                   </Link>
                 </h5>
                 <div className="text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore.
+                    CourtIQ uses JavaScript, React, Firebase, Express,
+                    PostgreSQL, and APIs to provide NBA fans with data-driven
+                    insights for informed betting decisions. Leading
+                    development, I collaborated with colleagues to revolutionize
+                    the fan experience, implementing real-time updates and a
+                    bespoke GPT model. Overcoming technical challenges, we
+                    ensure high code standards and continually innovate to
+                    exceed user expectations in NBA fandom.
                   </p>
                 </div>
-                <Link legacyBehavior href="/work-single">
-                  <a className="lnk">See project</a>
-                </Link>
+                <a
+                  legacyBehavior
+                  target="_blank"
+                  href="https://courtiq.netlify.app"
+                >
+                  <p className="lnk">See project</p>
+                </a>
               </div>
+              <a
+                target="_blank"
+                href="https://github.com/Batista0523/Capstone-front-end"
+                className="lnk"
+              >
+                GitHub
+              </a>
               <div
                 className="bg-img"
                 style={{
@@ -106,35 +119,51 @@ const PortfolioIsotope = ({ noViewMore }) => {
             >
               <div className="image">
                 <div className="img">
-                  <Link legacyBehavior href="/work-single">
+                  <a
+                    target="_blank"
+                    legacyBehavior
+                    href="https://batistack.com"
+                  >
                     <a>
                       <img
                         decoding="async"
-                        src="assets/images/work2.jpeg"
+                        src="assets/images/batistack.png"
                         alt="Gooir"
                       />
                       <span className="overlay" />
                     </a>
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="desc">
-                <span className="category"> Branding, UI UX Design </span>
+                <span className="category"> Front End </span>
                 <h5 className="name">
                   <Link legacyBehavior href="/work-single">
-                    <a>Gooir</a>
+                    <a>Batistack</a>
                   </Link>
                 </h5>
                 <div className="text">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore.
+                    Batistack is a dynamic website crafted with React, Next.js,
+                    JavaScript, Bootstrap, and CSS, showcasing the expertise of
+                    a premier web development company. Integrated with an API
+                    for seamless contact form functionality, Batistack presents
+                    a polished and informative platform. It highlights my
+                    commitment to excellence in web development, offering a
+                    comprehensive view of my services and capabilities.
                   </p>
                 </div>
-                <Link legacyBehavior href="/work-single">
+                <a target="_blank" legacyBehavior href="https://batistack.com">
                   <a className="lnk">See project</a>
-                </Link>
+                </a>
               </div>
+              <a
+                target="_blank"
+                legacyBehavior
+                href="https://github.com/Batista0523/batistack-front-pro"
+              >
+                <a className="lnk">GitHub</a>
+              </a>
               <div
                 className="bg-img"
                 style={{
@@ -143,139 +172,8 @@ const PortfolioIsotope = ({ noViewMore }) => {
               />
             </div>
           </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-ui-ux-design ">
-            <div
-              className="works-item scrolla-element-anim-1 scroll-animate"
-              data-animate="active"
-            >
-              <div className="image">
-                <div className="img">
-                  <Link legacyBehavior href="/work-single">
-                    <a>
-                      <img
-                        decoding="async"
-                        src="assets/images/work7.jpg"
-                        alt="Explore"
-                      />
-                      <span className="overlay" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-              <div className="desc">
-                <span className="category"> Development, UI UX Design </span>
-                <h5 className="name">
-                  <Link legacyBehavior href="/work-single">
-                    <a>Explore</a>
-                  </Link>
-                </h5>
-                <div className="text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-                <Link legacyBehavior href="/work-single">
-                  <a className="lnk">See project</a>
-                </Link>
-              </div>
-              <div
-                className="bg-img"
-                style={{
-                  backgroundImage: "url(assets/images/pat-2.png)",
-                }}
-              />
-            </div>
-          </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
-            <div
-              className="works-item scrolla-element-anim-1 scroll-animate"
-              data-animate="active"
-            >
-              <div className="image">
-                <div className="img">
-                  <Link legacyBehavior href="/work-single">
-                    <a>
-                      <img
-                        decoding="async"
-                        src="assets/images/work1.jpeg"
-                        alt="Mozar"
-                      />
-                      <span className="overlay" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-              <div className="desc">
-                <span className="category"> Branding, Photography </span>
-                <h5 className="name">
-                  <Link legacyBehavior href="/work-single">
-                    <a>Mozar</a>
-                  </Link>
-                </h5>
-                <div className="text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-                <Link legacyBehavior href="/work-single">
-                  <a className="lnk">See project</a>
-                </Link>
-              </div>
-              <div
-                className="bg-img"
-                style={{
-                  backgroundImage: "url(assets/images/pat-2.png)",
-                }}
-              />
-            </div>
-          </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-ui-ux-design ">
-            <div
-              className="works-item scrolla-element-anim-1 scroll-animate"
-              data-animate="active"
-            >
-              <div className="image">
-                <div className="img">
-                  <Link legacyBehavior href="/work-single">
-                    <a>
-                      <img
-                        decoding="async"
-                        src="assets/images/single8.jpg"
-                        alt="Stay Fit"
-                      />
-                      <span className="overlay" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-              <div className="desc">
-                <span className="category"> Development, UI UX Design </span>
-                <h5 className="name">
-                  <Link legacyBehavior href="/work-single">
-                    <a>Stay Fit</a>
-                  </Link>
-                </h5>
-                <div className="text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-                <Link legacyBehavior href="/work-single">
-                  <a className="lnk">See project</a>
-                </Link>
-              </div>
-              <div
-                className="bg-img"
-                style={{
-                  backgroundImage: "url(assets/images/pat-2.png)",
-                }}
-              />
-            </div>
-          </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-photo ">
+
+          {/* <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-photo ">
             <div
               className="works-item scrolla-element-anim-1 scroll-animate"
               data-animate="active"
@@ -318,20 +216,8 @@ const PortfolioIsotope = ({ noViewMore }) => {
                 }}
               />
             </div>
-          </div>
+          </div> */}
         </div>
-        {!noViewMore && (
-          <div className="load-more-link">
-            <Link legacyBehavior href="/works">
-              <a
-                className="btn scrolla-element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <span>View More</span>
-              </a>
-            </Link>
-          </div>
-        )}
       </div>
     </Fragment>
   );

@@ -564,7 +564,7 @@ const Index = () => {
                     data-animate="active"
                   >
                     <h6 className="name">
-                      <span>Another Skills/Tools</span>
+                      <span>Others Skills/Tools</span>
                     </h6>
                     <div className="text">
                       <div>

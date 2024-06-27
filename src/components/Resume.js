@@ -38,7 +38,7 @@ const educationData = [
   {
     id: 5,
     title: "High School",
-    academy: "FDR Hight School",
+    academy: "FDR High School",
     dec: "Completed courses in Mathematics, Sciences, Humanities, and Electives. Developed skills in time management, collaboration, and problem-solving.",
     startYear: "2007",
     endYear: "2011",

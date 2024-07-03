@@ -63,14 +63,7 @@ const experienceData = [
     endYear: "2020",
   
   },
-  {
-    id: 3,
-    title: "Software Developer",
-    company: "UpWork",
-    dec: "Led the development and deployment of custom plugins, enhancing functionality and user experience on the Fiverr platform. Collaborated closely with cross-functional teams to design and implement scalable solutions, leveraging technologies such as JavaScript, Node.js, and PostgreSQL. Contributed to improving platform performance and reliability, ensuring seamless integration of new features. Managed project timelines and deliverables, consistently meeting or exceeding client expectations.",
-    startYear: "2014",
-    endYear: "2016",
-  }
+
   
 ];
 

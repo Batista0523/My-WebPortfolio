@@ -97,13 +97,13 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="bts">
-                  <a
+                  {/* <a
                     target="_blank"
                     href="https://docs.google.com/document/d/1UazOLTLVmy54HM3MpewZl7cbA6mziKwnavy2L0lP8hk/edit?usp=sharing"
                     className="btn"
                   >
                     <span>Download CV</span>
-                  </a>
+                  </a> */}
                   <a href="#skills-section" className="btn-lnk">
                     {" "}
                     My Skills{" "}
@@ -115,7 +115,6 @@ const Index = () => {
                 data-animate="active"
               >
                 <img
-               
                   decoding="async"
                   src="assets/images/IMG_0896.PNG"
                   alt="<b>Zoé</b> Miller"
@@ -127,7 +126,7 @@ const Index = () => {
                     backgroundImage: "url(assets/images/pat-1.png)",
                   }}
                 />
-              <span
+                <span
                   className="circle img-1"
                   style={{
                     backgroundImage: "url(assets/images/pat-1.png)",
@@ -145,24 +144,6 @@ const Index = () => {
                     backgroundImage: "url(assets/images/pat-2.png)",
                   }}
                 />
-                <div className="info-list">
-                  <ul>
-                    <li>
-                      <span className="num">
-                        3 <strong>+</strong>
-                      </span>
-                      <span className="value">
-                        Years of <strong>Experience</strong>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="num">30</span>
-                      <span className="value">
-                        Completed <strong>Projects</strong>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
             <div className="lui-bgtitle">
@@ -781,9 +762,6 @@ const Index = () => {
                           </div>
                         </div>
                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right">
-                          <div className="terms-label">
-                            * Accept the terms and conditions.
-                          </div>
                           <input className="btn" type="submit" value="Send" />
                         </div>
                       </div>

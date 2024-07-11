@@ -97,13 +97,13 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="bts">
-                  {/* <a
+                  <a
                     target="_blank"
                     href="https://docs.google.com/document/d/1UazOLTLVmy54HM3MpewZl7cbA6mziKwnavy2L0lP8hk/edit?usp=sharing"
                     className="btn"
                   >
                     <span>Download CV</span>
-                  </a> */}
+                  </a>
                   <a href="#skills-section" className="btn-lnk">
                     {" "}
                     My Skills{" "}
@@ -114,6 +114,7 @@ const Index = () => {
                 className="slide scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
+
                 <img
                   decoding="async"
                   src="assets/images/IMG_0896.PNG"

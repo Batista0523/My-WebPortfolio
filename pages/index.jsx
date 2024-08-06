@@ -382,9 +382,7 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="value">
-                      <span className="num">
-                        85 <span>%</span>
-                      </span>
+                    
                     </div>
                   </div>
                   <div
@@ -410,11 +408,7 @@ const Index = () => {
                         <span />
                       </div>
                     </div>
-                    <div className="value">
-                      <span className="num">
-                        75 <span>%</span>
-                      </span>
-                    </div>
+                  
                   </div>
                 </div>
               </div>
@@ -444,11 +438,7 @@ const Index = () => {
                         <span />
                       </div>
                     </div>
-                    <div className="value">
-                      <span className="num">
-                        75 <span>%</span>
-                      </span>
-                    </div>
+                   
                   </div>
                   <div
                     className="skills-item scrolla-element-anim-1 scroll-animate"
@@ -474,11 +464,7 @@ const Index = () => {
                         <span />
                       </div>
                     </div>
-                    <div className="value">
-                      <span className="num">
-                        80 <span>%</span>
-                      </span>
-                    </div>
+                  
                   </div>
                 </div>
               </div>
@@ -505,11 +491,7 @@ const Index = () => {
                         <span />
                       </div>
                     </div>
-                    <div className="value">
-                      <span className="num">
-                        70 <span>%</span>
-                      </span>
-                    </div>
+                  
                   </div>
                   <div
                     className="skills-item scrolla-element-anim-1 scroll-animate"
@@ -535,11 +517,7 @@ const Index = () => {
                         <span />
                       </div>
                     </div>
-                    <div className="value">
-                      <span className="num">
-                        80 <span>%</span>
-                      </span>
-                    </div>
+                 
                   </div>
                   <div
                     className="skills-item scrolla-element-anim-2 scroll-animate"
@@ -566,11 +544,7 @@ const Index = () => {
                         <span></span>
                       </div>
                     </div>
-                    <div className="value">
-                      <span className="num">
-                        85 <span>%</span>
-                      </span>
-                    </div>
+                   
                   </div>
                 </div>
               </div>

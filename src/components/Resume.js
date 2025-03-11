@@ -5,67 +5,56 @@ const educationData = [
     id: 1,
     title: "Computer Science",
     academy: "LaGuardia Community College",
-    dec: " Calculus I, Computer Programming I, General Chemistry I, Mathematical Structures for Computer Science, Computer Programming II, Data Structures and Algorithms, Research Methods in Computers and Society",
+    dec: "Coursework in General Studies, Computer Science Foundations, and Mathematics. Developed problem-solving and analytical thinking skills.",
     startYear: "2012",
-    endYear: "2013",
-  },
-  {
-    id: 4,
-    title: "The Web Developer Bootcamp 2024",
-    academy: "Udemy",
-    dec: "Completed the comprehensive Web Developer Bootcamp 2024 course on Udemy, covering modern web development technologies and practices. Mastered front-end development with HTML5, CSS3, and JavaScript, including frameworks like React.js. Acquired proficiency in server-side scripting using Node.js and Express.js, and database management with MongoDB. Hands-on experience in building responsive web applications, implementing RESTful APIs, and deploying projects using cloud services. Developed a strong foundation in full-stack web development, emphasizing code quality, performance optimization, and responsive design principles.",
-    startYear: "2022",
-    endYear: "2023",
-    
+    endYear: false,
   },
   {
     id: 2,
-    title: "Full Stack Developer",
+    title: "Full Stack Development",
     academy: "Pursuit Fellowship",
-    dec: "Frontend Development: JavaScript, React, Next.js, HTML, CSS, Vite, Backend Development: Node.js, Express, RESTful APIs, Database Management: PostgreSQL, Version Control: Git, GitHub, Testing & Debugging: Unit Testing, Integration Testing, Collaboration Tools: Slack, Trello",
-    startYear: "2022",
+    dec: "An intensive fellowship specializing in JavaScript, HTML, CSS, React, Node.js, SQL, Test-Driven Development. First Place Hackathon Winner for 'BIKE THE BIG APPLE' and innovative Capstone Leader for CourtIQ project at BlackRock.",
+    startYear: "2023",
     endYear: "2024",
   },
   {
     id: 3,
-    title: "Node,SQL & PostrgreSQL - mastering Backend Web Development",
+    title: "Node, SQL & PostgreSQL - Mastering Backend Web Development",
     academy: "Udemy",
-    dec: "Completed Mastering Backend Web Development certification on Udemy, specializing in Node.js, SQL, and PostgreSQL. Proficient in building robust backend systems with Node.js, and skilled in SQL and PostgreSQL for database management. Experienced in deploying scalable web applications and implementing RESTful APIs for enhanced functionality.",
-    startYear: "2022",
+    dec: "Developed advanced backend skills specializing in Node.js, SQL, and PostgreSQL. Proficient in building robust backend systems and implementing RESTful APIs.",
+    startYear: "2023",
     endYear: "2023",
-    
   },
   {
-    id: 5,
-    title: "High School",
-    academy: "FDR High School",
-    dec: "Completed courses in Mathematics, Sciences, Humanities, and Electives. Developed skills in time management, collaboration, and problem-solving.",
-    startYear: "2007",
-    endYear: "2011",
-  },
+    id: 4,
+    title: "Full Stack Web Developer",
+    academy: "Udemy",
+    dec: "Gained comprehensive expertise in both front-end and back-end technologies. Built responsive web applications, implemented RESTful APIs, and deployed projects using cloud services.",
+    startYear: "2023",
+    endYear: "2023",
+  }
 ];
 
 const experienceData = [
   {
     id: 1,
-    title: "Professional Chauffeur",
-    company: "Crestwood Limousine",
-    dec: "Experienced professional chauffeur known for delivering exceptional customer service in the transportation industry. Dedicated to providing a safe, comfortable, and punctual driving experience for clients. Skilled in navigating diverse routes with precision while maintaining a focus on passenger comfort and satisfaction. Proven track record of building strong client relationships through attentive service and professionalism. Possesses a thorough knowledge of local traffic regulations and routes to ensure efficient travel. Committed to upholding the highest standards of service excellence in every journey",
-    startYear: "2016",
+    title: "Software Engineer",
+    company: "Winter Wolf Tech",
+    dec: "Designed and implemented Winter Wolf-Quote-Master, reducing quote generation time from hours to minutes, resulting in an estimated $600K to $1.2M in regained revenue annually. Led project management, coordinated team tasks, and optimized the company’s website based on requirements from the CEO.",
+    startYear: "2023",
     endYear: false,
   },
   {
     id: 2,
-    title: "Project Manager",
-    company: "Winter Wolf Tech",
-    dec: "Served as a Project Manager at Winter Wolf Tech, overseeing the successful planning, execution, and delivery of multiple projects within scope, budget, and timeline constraints. Led cross-functional teams in Agile methodologies, facilitating sprint planning, daily stand-ups, and retrospectives to ensure efficient project progress. Managed stakeholder communications and expectations, providing regular updates and addressing project risks and issues proactively. Utilized project management tools to track milestones, deliverables, and resource allocation effectively. Demonstrated strong leadership and organizational skills to drive project completion and client satisfaction.",
-    startYear: "2019",
-    endYear: "2020",
-  
-  },
-
-  
+    title: "Professional Chauffeur",
+    company: "Crestwood Limousine",
+    dec: "Consistently maintained a 5-star customer satisfaction rating across 200+ high-profile client rides. Delivered a premium client experience ensuring comfort, safety, and professionalism.",
+    startYear: "2018",
+    endYear: "2023",
+  }
 ];
+
+
 
 const Resume = () => {
   const [educationToggle, setEducationToggle] = useState(1);

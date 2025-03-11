@@ -1,2 +1,0 @@
-
-export const GA_TRACKING_ID = 'TU_ID_DE_SEGUIMIENTO';
